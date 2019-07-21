@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .card-horizontal {
+        display: flex;
+        flex: 1 1 auto;
+    }
+</style>
+<div class="container" style="margin-bottom:75px;">
+    <div class="text-center">
+        <h1 class="display-3">The Dev Talk Show!</h1>
+        <h3>Developers doing what developers do, recorded during a live stream.</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <img src="~/img/TheDevTalkShow 488a99-trans.png" style="max-width:400px;">
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="featureIcon" src="~/img/streamIcon.png" style="padding-top:40px;" alt="streaming icon">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Join Us, Live - Next show: Wed @@ 8:30PM EST</h4>
+                            <p class="card-text">Watch the show live and join the dialog too! You can watch on mixer, twitch or youtube to view us live. Please say "hi", ask a question, or leave a comment on the live feed. Watch on <a href="">Twitch</a> | <a href="">Mixer</a> | <a href="">YouTube</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="featureIcon" src="~/img/youtube-logo.png" style="padding-top:40px;" alt="youtube logo">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Catch Up</h4>
+                            <p class="card-text">Our YouTube catalog contains all our shows and content.</p>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="col-md-12">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="" src="~/img/podcast-512.png" style="width:75px; padding-top:20px;" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Listen On The Go</h4>
+                            <p class="card-text">If video isn't your thing, we've converted each show to a podcast just for you!</p>
+                        </div>
+                    </div>
+                </div>*@
+                <div class="col-md-12">
+                    <div class="card-horizontal">
+                        <h5 class="card-title">Latest<br/> Episode</h5>
+                        <div class="card-body">
+                            <iframe src="https://www.youtube.com/embed/0FG2aLiMu88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fullWidthPanel" >
+    <div class="container">
+        <h2 style="padding-top:0px;">Affiliated Content</h2>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card affiliate">
+                    <div style="padding:20px;">
+                        <img src="~/img/Phillydotnet.png" style="max-height:105px;" class="card-img-top" alt="PhillyDotNet Logo">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Philly.NET</h5>
+                        <p class="card-text">Very popular usergroup featuring great content</p>
+                        <ul class="list-unstyled">
+                            <li><a href="http://meetup.com/philly-net">MeetUp Info</a></li>
+                            <li><a href="http://youtube.com/phillydotnet">YouTube Channel</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card affiliate">
+                    <div style="padding:20px;">
+                        <img src="~/img/techbash2019.png" style="max-height:105px;" class="card-img-top" alt="TechBash Logo">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TechBash</h5>
+                        <p class="card-text">An awesome developer conference in the poconos</p>
+                        <ul class="list-unstyled">
+                            <li><a href="http://TechBash.com">TechBash.com</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCwrHPf4oI1_UydigJQxuj3g">YouTube Channel</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card affiliate">
+                    <div class="card-body">
+                        <h5 class="card-title">Better Off Dev</h5>
+                        <p class="card-text">Another Live Stream, brought to you by Rich</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card affiliate">
+                    <div class="card-body">
+                        <h5 class="card-title">SpaceShot</h5>
+                        <p class="card-text">Another Live Stream, brought to you by Chris</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Latest Episode</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0FG2aLiMu88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
