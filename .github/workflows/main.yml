@@ -27,10 +27,12 @@ jobs:
       with:
         dotnet-version: 3.1.200
         
-    - name: Restore NuGet
+    - name: Install dependencies
       run: dotnet restore
       
-    - name: Build App
-      run: dotnet build --configuration Release --no-restore
+    - name: Build and publish
+      run: |
+        dotnet build --configuration Release --no-restore
+        dotnet publish -c Release -o ./publish
       
     
