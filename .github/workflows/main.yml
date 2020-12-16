@@ -25,12 +25,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+    # Add the .NET SDK
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: 3.1.200
+          
+      - name: Install dependencies
+        run: dotnet restore
+        
+      - name: Build and Publish
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          dotnet build -- configuration Release --no-restore
+          dotnet publish -c Release -o ./publish
+         
+      
+          
+       
+
