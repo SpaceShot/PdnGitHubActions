@@ -39,7 +39,12 @@ jobs:
           dotnet build -- configuration Release --no-restore
           dotnet publish -c Release -o ./publish
          
-      
+      - name: Deploy to Web Apps
+        uses: Azure/webapps-deploy@v2
+        with:
+          app-name: pdnwebapp
+          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+          package: ./publish   
           
        
 
